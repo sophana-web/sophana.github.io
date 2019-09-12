@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Décorer</title>
+
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/2ad37c5d79.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+
+</head>
+
+<body>
+
+	<header>
+		<h2><a href="index.html">Décor-er</a></h2>
+		<nav>
+			<li><a href="#C1">How It Works</a></li>
+			<li><a href="#C2">Style Gallery</a></li>
+			<li><a href="#C3">Contact Us</a></li>
+			<li><a href="#C4">About Us</a></li>
+		</nav>
+	</header>
+
+  <section class="hero">
+    <div class="background-image" style="background-image: url(background.jpg);"></div>
+    <h1>Interior Design</h1>
+    <h3>Re-imagine your home in 3D with a professional designer.</h3>
+    <a href="#C1" class="btn">Get Started</a>
+  </section>
+
+  <section class="features" id="C1">
+		<h3 class="title">How it works</h3>
+		<p>The 4 Simple Steps Through The Process Are:</p>
+		<hr>
+
+		<ul class="grid">
+			<li>
+				<i class="fas fa-chair"></i>
+				<h4>Step 1</h4>
+				<p>Show us what you like using our style gallery</p>
+			</li>
+			<li>
+				<i class="fas fa-tape"></i>
+				<h4>Step 2</h4>
+				<p>Send dimensions and photos of your room to the Décor-er team</p>
+			</li>
+			<li>
+				<i class="fas fa-pencil-ruler"></i>
+				<h4>Step 3</h4>
+				<p>A Décor-er interior designer will reimagine your space</p>
+			</li>
+      <li>
+        <i class="far fa-images"></i>
+        <h4>Step 4</h4>
+        <p>Receive a photo-quality 3D visualisation of your room and a MADE shopping list</p>
+      </li>
+	</section>
+
+  <section class="our-work" id="C2">
+    <h3 class="title">Style Gallery</h3>
+    <p>Choose the type of rooms you want us to decorate:</p>
+    <hr>
+
+    <ul class="grid">
+      <li style="background-image: url(livingroom.jpg)">
+        <div class="overlay"><a href="livingroom.html" target="_blank">
+          <div class="textdisplay">Livingroom</div>
+        </div>
+        </a>
+      </li>
+
+      <li style="background-image: url(bedroom.jpg)">
+        <div class="overlay"><a href="livingroom.html" target="_blank">
+          <div class="textdisplay">Bedroom</div>
+        </div>
+        </a>
+      </li>
+      <li style="background-image: url(diningroom.jpg)"><a href="livingroom.html" target="_blank">
+        <div class="overlay">
+          <div class="textdisplay">Dinningroom</div>
+        </div>
+      </a>
+      </li>
+
+  </section>
+	<section class="contact" id="C3">
+		<h3 class="title">Contact Us</h3>
+		<p>Fill in the information below.</p>
+		<hr>
+    <form>
+            <input type="text" id="fname" name="fullname" placeholder="Full Name">
+
+            <input type="text" id="email" name="email" placeholder="Email">
+
+            <textarea id="subject" name="subject" placeholder="Write your message..." style="height:200px"></textarea>
+            <input type="submit" value="Submit">
+        </div>
+      </form>
+	</section>
+
+  <section class="about" id="C4">
+		<h3 class="title">About Us</h3>
+		<hr>
+
+		<ul class="grid">
+			<li>
+				<p>Décor-er is the global, industry-leading design publication, website and events company mainly serving the interior design. Interior Design Events connects the industry, promoting creative leadership, innovation and collaboration across a wide range of practice areas and platforms. Interior Design’s digital companion, decorer.net, is the go-to site for relevant and real-time content for the industry's largest and most engaged design audience.</p>
+			</li>
+			<li>
+        <span class="heading">User Rating</span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<p>4.1 average based on 254 reviews.</p>
+
+<div class="row">
+  <div class="side">
+    <div>5 star</div>
+  </div>
+  <div class="middle">
+    <div class="bar-container">
+      <div class="bar-5"></div>
+    </div>
+  </div>
+  <div class="side right">
+    <div>150</div>
+  </div>
+  <div class="side">
+    <div>4 star</div>
+  </div>
+  <div class="middle">
+    <div class="bar-container">
+      <div class="bar-4"></div>
+    </div>
+  </div>
+  <div class="side right">
+    <div>63</div>
+  </div>
+  <div class="side">
+    <div>3 star</div>
+  </div>
+  <div class="middle">
+    <div class="bar-container">
+      <div class="bar-3"></div>
+    </div>
+  </div>
+  <div class="side right">
+    <div>15</div>
+  </div>
+  <div class="side">
+    <div>2 star</div>
+  </div>
+  <div class="middle">
+    <div class="bar-container">
+      <div class="bar-2"></div>
+    </div>
+  </div>
+  <div class="side right">
+    <div>6</div>
+  </div>
+  <div class="side">
+    <div>1 star</div>
+  </div>
+  <div class="middle">
+    <div class="bar-container">
+      <div class="bar-1"></div>
+    </div>
+  </div>
+  <div class="side right">
+    <div>20</div>
+  </div>
+</div>
+	</section>
+
+
+	<footer>
+		<ul>
+			<li><a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter-square"></i></i></i></a></li>
+			<li><a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-square"></i></a></li>
+			<li><a href="https://www.snapchat.com/" target="_blank"><i class="fab fa-snapchat-square"></i></a></li>
+			<li><a href="https://www.pinterest.com/" target="_blank"><i class="fab fa-pinterest-square"></i></a></li>
+			<li><a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+		</ul>
+		<p>&copy;Copyright: Yi Sophana 2019</p>
+		<p>This website in intended to be used in the final project of HTML and CSS Class 2019 </p>
+	</footer>
+  <button onclick="topFunction()" id="myBtn" title="Go to top">Back To Top</button>
+
+  <script>
+  //Get the button
+  var mybutton = document.getElementById("myBtn");
+
+  // When the user scrolls down 20px from the top of the document, show the button
+  window.onscroll = function() {scrollFunction()};
+
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
+  }
+
+  // When the user clicks on the button, scroll to the top of the document
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+  </script>
+
+</body>
+
+</html>
